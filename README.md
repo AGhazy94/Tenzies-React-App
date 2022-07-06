@@ -84,7 +84,7 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 <div align="center">
-  <a href="https://aghazy94.github.io/Tenzies-React-App/">
+  <a href="https://aghazy94.github.io/Tenzies-React-App/" target="_blank">
     <img src="https://i.ibb.co/SNS4hrx/Tenzies-React-App-Preview.png" alt="Logo" width="410">
   </a>
 </div>
