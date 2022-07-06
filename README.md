@@ -7,8 +7,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -24,7 +22,6 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] -->
-
 
 <!-- PROJECT LOGO -->
 <!-- <br />
@@ -49,11 +46,10 @@
   </p>
 </div> -->
 
-
 # Tenzies Game (Developed with React.JS)
 
 <!-- TABLE OF CONTENTS -->
-<details>
+<div>
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -65,22 +61,22 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <!-- <li><a href="#prerequisites">Prerequisites</a></li> -->
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <!-- <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
-</details>
-
-
+</div>
+<hr />
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <br />
@@ -88,95 +84,113 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://aghazy94.github.io/Tenzies-React-App/">
     <img src="https://i.ibb.co/SNS4hrx/Tenzies-React-App-Preview.png" alt="Logo" width="410">
   </a>
 </div>
 
 <br />
 
+### Simple Tenzies Game, yet with lots of features added to it
+- Dice are rended as dots instead of renders
+- Rolls counter
+- Cool Animation when game's completed
+### Features to be added
+- Count up timer to track time took to complete the game
+- Best time score to be saves in LocalStorage
+
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 
 ### Built With
 
 <!-- * [Next.js](https://nextjs.org/) -->
-* [React.js](https://reactjs.org/)
-<!-- * [Vue.js](https://vuejs.org/) -->
-<!-- * [Angular](https://angular.io/) -->
-<!-- * [Svelte](https://svelte.dev/) -->
-<!-- * [Laravel](https://laravel.com) -->
-<!-- * [Bootstrap](https://getbootstrap.com) -->
-<!-- * [JQuery](https://jquery.com) -->
+
+- [React.js](https://reactjs.org/)
+  <!-- * [Vue.js](https://vuejs.org/) -->
+  <!-- * [Angular](https://angular.io/) -->
+  <!-- * [Svelte](https://svelte.dev/) -->
+  <!-- * [Laravel](https://laravel.com) -->
+  <!-- * [Bootstrap](https://getbootstrap.com) -->
+  <!-- * [JQuery](https://jquery.com) -->
+
+ - #### Dependencies 
+   - [NanoId](https://www.npmjs.com/package/nanoid) to generate UID for keys and selecting elements.
+   - [Confetti](https://www.npmjs.com/package/react-confetti) to render the cool winning animation when game is finished.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+<hr />
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 <!-- This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps. -->
 
-### Prerequisites
+<!-- ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
+
+To run the app on a development server, copy the following commands into your terminal. <small>make sure that you're in the project directory</small>
 * npm
   ```sh
   npm install npm@latest -g
-  ```
+  ``` -->
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+<!-- 1. Get a free API Key at [https://example.com](https://example.com) -->
+
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/AGhazy94/Tenzies-React-App.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Run the development server
+   ```sh
+   npm start
    ```
+<hr />
+   <!-- 4. Enter your API in `config.js`
+      ```js
+      const API_KEY = 'ENTER YOUR API';
+      ``` -->
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- USAGE EXAMPLES -->
-## Usage
+
+<!-- ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- ROADMAP -->
-## Roadmap
+
+<!-- ## Roadmap
 
 - [ ] Feature 1
 - [ ] Feature 2
 - [ ] Feature 3
-    - [ ] Nested Feature
+  - [ ] Nested Feature
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
-## Contributing
+
+<!-- ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -189,44 +203,43 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
-## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+<!-- ## License
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Distributed under the MIT License. See `LICENSE.txt` for more information. -->
 
-
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- CONTACT -->
+
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+<!-- Your Name - [LinkedIn Profile](https://www.linkedin.com/in/ahmedhg94/) - ahmed.h.ghazy@gmail.com -->
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+[![WhatsApp][whatsapp-shield]][whatsapp-url]
+
+Project Link: [Github_Repo](https://github.com/AGhazy94/Tenzies-React-App)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
 
-* []()
-* []()
-* []()
+<!-- ## Acknowledgments
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+- []()
+- []()
+- []() -->
 
-
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
 [forks-url]: https://github.com/github_username/repo_name/network/members
@@ -236,6 +249,8 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [issues-url]: https://github.com/github_username/repo_name/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[product-screenshot]: images/screenshot.png -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/ahmedhg94/
+[whatsapp-shield]: https://img.shields.io/badge/whatsapp-128C7E.svg?style=for-the-badge&logo=whatsapp&logoColor=white
+[whatsapp-url]: http://Wa.me/201153395730
