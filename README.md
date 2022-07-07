@@ -95,9 +95,9 @@
 - Dice are rended as dots instead of renders
 - Rolls counter
 - Cool Animation when game's completed
-### Features to be added
 - Count up timer to track time took to complete the game
 - Best time score to be saves in LocalStorage
+
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
