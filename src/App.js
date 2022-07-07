@@ -55,8 +55,6 @@ const App = () => {
 			clearInterval(timer);
 		}
 
-		console.log(time.total, bestTime.total);
-
 		return () => {
 			clearInterval(timer);
 		};
