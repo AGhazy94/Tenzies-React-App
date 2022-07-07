@@ -45,7 +45,7 @@ const App = () => {
 		if (allHeld && allSameValue) {
 			
 			// Getting best time score & set the lowest value in LocalStorage
-			if (bestTime.total === undefined) {
+			if (!bestTime.total) {
 				setBestTime(localStorage.setItem('bestTime', JSON.stringify(time)));
 			} else if (time.total < +bestTime.total) {
 				setBestTime(localStorage.setItem('bestTime', JSON.stringify(time)));
