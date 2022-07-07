@@ -19,7 +19,6 @@ const App = () => {
 	let updatedSecs = time.secs;
 	let updatedMins = time.mins;
 	let totalTime = time.total;
-	let timer;
 
 	const run = () => {
 		if (updatedSecs === 60) {
@@ -38,18 +37,17 @@ const App = () => {
 
 	// Win condition
 	useEffect(() => {
-		timer = setInterval(run, 1000);
+		let timer = setInterval(run, 1000);
+
 		const allHeld = allDice.every((die) => die.isHeld);
 		const allSameValue = allDice.every((die) => die.value === allDice[0].value);
 
 		if (allHeld && allSameValue) {
-			
 			// Getting best time score & set the lowest value in LocalStorage
-			if (!bestTime.total) {
-				setBestTime(localStorage.setItem('bestTime', JSON.stringify(time)));
-			} else if (time.total < +bestTime.total) {
+			if (!bestTime || time.total < +bestTime.total) {
 				setBestTime(localStorage.setItem('bestTime', JSON.stringify(time)));
 			}
+
 			// Pause Time and display winning
 			setTenzies(true);
 			clearInterval(timer);
@@ -58,7 +56,8 @@ const App = () => {
 		return () => {
 			clearInterval(timer);
 		};
-	}, [allDice]);
+	}, [allDice, bestTime, time]);
+
 	// Generating an array with 10 random numbers between 1 ~ 6
 	function diceGenerator() {
 		let dice = [];
