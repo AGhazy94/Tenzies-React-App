@@ -35,28 +35,32 @@ const App = () => {
 		}));
 	};
 
+// Win condition
+	const allHeld = allDice.every((die) => die.isHeld);
+	const allSameValue = allDice.every((die) => die.value === allDice[0].value);
+
 	useEffect(() => {
 		timer = setInterval(run, 1000);
+
+		// Pause Time on winning
+		if (allHeld && allSameValue) {
+			clearInterval(timer);
+		}
 
 		return () => {
 			clearInterval(timer);
 		};
 	}, [time]);
 
-	// Win condition
 	useEffect(() => {
-		const allHeld = allDice.every((die) => die.isHeld);
-		const allSameValue = allDice.every((die) => die.value === allDice[0].value);
-
 		if (allHeld && allSameValue) {
 			// Getting best time score & set the lowest value in LocalStorage
 			if (!bestTime || time.total < +bestTime.total) {
 				setBestTime(localStorage.setItem('bestTime', JSON.stringify(time)));
 			}
 
-			// Pause Time and display winning
+			// display winning animation
 			setTenzies(true);
-			clearInterval(timer);
 		}
 	}, [allDice, bestTime]);
 
