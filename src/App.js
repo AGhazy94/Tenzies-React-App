@@ -19,7 +19,7 @@ const App = () => {
 	let updatedSecs = time.secs;
 	let updatedMins = time.mins;
 	let totalTime = time.total;
-
+	let timer;
 	const run = () => {
 		if (updatedSecs === 60) {
 			updatedMins++;
@@ -35,10 +35,16 @@ const App = () => {
 		}));
 	};
 
+	useEffect(() => {
+		timer = setInterval(run, 1000);
+
+		return () => {
+			clearInterval(timer);
+		};
+	}, [time]);
+
 	// Win condition
 	useEffect(() => {
-		let timer = setInterval(run, 1000);
-
 		const allHeld = allDice.every((die) => die.isHeld);
 		const allSameValue = allDice.every((die) => die.value === allDice[0].value);
 
@@ -52,11 +58,7 @@ const App = () => {
 			setTenzies(true);
 			clearInterval(timer);
 		}
-
-		return () => {
-			clearInterval(timer);
-		};
-	}, [allDice, bestTime, time]);
+	}, [allDice, bestTime]);
 
 	// Generating an array with 10 random numbers between 1 ~ 6
 	function diceGenerator() {
